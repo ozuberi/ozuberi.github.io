@@ -154,7 +154,7 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-image: url('../img/IMG_4718.jpg');
   text-align: center;
   color: white;
