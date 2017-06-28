@@ -30,12 +30,14 @@ h6 {
 }
 ul {
     padding:0;
-    list-style: none;
 }
 .footer-social-icons {
     width: 42px;
-    display:block;
+    display:inline;
     margin:top;
+    text-align:center;
+    padding:0;
+    
 }
 .social-icon {
     color: #fff;
@@ -43,19 +45,17 @@ ul {
 ul.social-icons {
     margin-top: top;
 }
-.social-icons ul {
-    vertical-align:top;
-    display:block;
-    height: 35px;
-    position: absolute;
-    
+.social-icons il {
+    vertical-align:center;
+    display:inline;
+    height: 15px;
 }
 .social-icons a {
     color: #fff;
     text-decoration: none;
 }
 .fa-facebook {
-    padding:10px 14px;
+    padding:10px 17px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -79,7 +79,7 @@ ul.social-icons {
     background-color: #3CB371;
 }
 .fa-linkedin {
-    padding:10px 14px;
+    padding:10px 15px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
