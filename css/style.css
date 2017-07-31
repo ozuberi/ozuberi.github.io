@@ -66,6 +66,18 @@ ul.social-icons {
 .fa-facebook:hover {
     background-color: #3d5b99;
 }
+.fa-instagram {
+    padding:10px 17px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;   
+}
+.fa-instagram:hover {
+    background-color: #cd486b;
+}
 .fa-medium {
     padding:10px 14px;
     -o-transition:.5s;
