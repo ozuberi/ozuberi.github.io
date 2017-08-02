@@ -15,8 +15,7 @@ $(document).ready(function() {
 
                 output += '<div class="col-sm-6 col-md-4 cell' + visibleSm + '">';
                 output += '<div class="blog-post"><header>';
-                output += '<h4 class="date">' + $.format.date(item.pubDate, "dd<br>MMM") + "</h4>";
-
+    
                 var tagIndex = item.description.indexOf("<img"); // Find where the img tag starts
                 var srcIndex = item.description.substring(tagIndex).indexOf("src=") + tagIndex; // Find where the src attribute starts
                 var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
@@ -26,7 +25,7 @@ $(document).ready(function() {
                 //TODO: enforce image sizing
                 output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="240px"></div></header>';
                 output += '<div class="blog-content"><h4><em><a href="' + item.link + '">' + item.title + "</a></em></h4>";
-                output += '<div class="post-meta"><em><span>By ' + item.author + "</span></em></div>";
+                output += '<div class="post-meta"><em><span>' + "</span></em></div>";
 
                 var yourString = item.description.replace(/<img[^>]*>/g, "");
                 var maxLength = 120; //show 120 char preview
