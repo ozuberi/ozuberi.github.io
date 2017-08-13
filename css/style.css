@@ -86,6 +86,19 @@ ul.social-icons {
 .fa-medium:hover {
     background-color: #3CB371;
 }
+.fa-soundcloud {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #fff;
+}
+.fa-soundcloud:hover {
+    background-color: #ff7700;
+}
+
 .fa-linkedin {
     padding:10px 15px;
     -o-transition:.5s;
