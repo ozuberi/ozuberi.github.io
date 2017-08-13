@@ -24,7 +24,7 @@ $(document).ready(function() {
 
                 //TODO: enforce image sizing
                 output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="200px"></div></header>';
-                output += '<div class="blog-content"><h4><em><a href="' + item.link + '" style="color:black">' + item.title + "</a></em></h4>";
+                output += '<div class="blog-content"><h4><em><a href="' + item.link + '"style="color:black">' + item.title + "</a></em></h4>";
                 output += '<div class="post-meta"><em><span>' + "</span></em></div>";
 
                 var yourString = item.description.replace(/<img[^>]*>/g, "");
