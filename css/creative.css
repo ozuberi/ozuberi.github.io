@@ -406,6 +406,19 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 100;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
 body {
   webkit-tap-highlight-color: #222222;
 }
