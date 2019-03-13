@@ -28,7 +28,7 @@ $(document).ready(function() {
                 output += '<div class="post-meta"><em><span>' + "</span></em></div>";
 
                 var yourString = item.description.replace(/<img[^>]*>/g, "");
-                var maxLength = 140; //show 120 char preview
+                var maxLength = 110; //show 120 char preview
 
                 var trimmedString = yourString.substr(0, maxLength);
                 //re-trim if we are in the middle of a word
