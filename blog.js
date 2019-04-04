@@ -13,7 +13,7 @@ $(document).ready(function() {
                   visibleSm = " visible-sm";
                 }
 
-                output += '<div class="col-sm-6 col-md-4 cell' + visibleSm + '">';
+                output += '<div class="col-sm-3 col-md-4 cell' + visibleSm + '">';
                 output += '<div class="blog-post"><header>';
     
                 var tagIndex = item.description.indexOf("<img"); // Find where the img tag starts
@@ -33,7 +33,7 @@ $(document).ready(function() {
                 var trimmedString = yourString.substr(0, maxLength);
                 //re-trim if we are in the middle of a word
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
-                output += "<p>" + trimmedString + "...</p>";
+//                output += "<p>" + trimmedString + "...</p>";
                 output += "</div></div></div>";
                 return k < 3;
             });
