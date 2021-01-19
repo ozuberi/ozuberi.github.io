@@ -160,32 +160,31 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/stadium.JPG');
+  background-position: right;
+  background-image: url('../img/pittsburghPic.JPG');
   text-align: center;
-  color: white;
+  color: black;
 }
 header .header-content {
   position: relative;
   text-align: center;
-  padding: 100px 15px 100px;
+  padding: 10px 15px 100px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 30px;
+  margin-top: 10;
+  margin-bottom: 10;
 }
 header .header-content .header-content-inner hr {
-  margin: 30px auto;
+  margin: 10px auto;
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
   color: rgba(255, 255, 255, 1);
-  font-size: 16px;
-  margin-bottom: 50px;
+  font-size: 60px;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   header {
@@ -193,11 +192,12 @@ header .header-content .header-content-inner p {
   }
   header .header-content {
     position: absolute;
-    top: 50%;
+    top: 20%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    padding: 0 50px;
+    padding: 50px;
+    font-size: 100px;
   }
   header .header-content .header-content-inner {
     max-width: 1000px;
@@ -205,10 +205,9 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
   header .header-content .header-content-inner h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
   header .header-content .header-content-inner p {
-    font-size: 18px;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .blog .blog-post {
-  margin-bottom: 140px;
+  margin-bottom: 40px;
 }
 .blog .blog-post header {
   position: relative;
@@ -76,7 +76,7 @@
   padding-left: 25px;
 }
 .cell {
-  height: 600px;
+  height: 450px;
 }
 .blog .blog-post footer .comment-count:hover,
 .blog .blog-post footer .comment-count:focus {

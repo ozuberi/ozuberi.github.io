@@ -2,7 +2,7 @@ $(document).ready(function() {
     var $content = $("#jsonContent");
     var data = { rss_url: "https://medium.com/feed/@osmanzub" };
     $.get("https://api.rss2json.com/v1/api.json", data, function(response) {
-        if (response.status == "ok") {
+        if (response.status === "ok") {
             var output = "";
             $.each(response.items, function(k, item) {
                 var visibleSm;
@@ -23,18 +23,17 @@ $(document).ready(function() {
                 var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
 
                 //TODO: enforce image sizing
-                output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="200px"></div></header>';
-                output += '<div class="blog-content"><h4><em><a href="' + item.link + '"style="color:black">' + item.title + "</a></em></h4>";
+                output += '<div class="col"><div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="200px"></div></div></div></header>';
+                output += '<div class="blog-content"><h4><em><a href="' + item.link + '"style="color:black">' + item.title + "</a></em></h4></div>";
                 output += '<div class="post-meta"><em><span>' + "</span></em></div>";
 
                 var yourString = item.description.replace(/<img[^>]*>/g, "");
                 var maxLength = 110; //show 120 char preview
-
                 var trimmedString = yourString.substr(0, maxLength);
                 //re-trim if we are in the middle of a word
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
 //                output += "<p>" + trimmedString + "...</p>";
-                output += "</div></div></div>";
+                output += "</div></div>";
                 return k < 3;
             });
             $content.html(output);
